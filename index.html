@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>minimalissimo</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+        }
+        img{
+            width: 100%;
+        }
+      
+        body>header{
+            width: 100%;
+            height: 290px;
+        }
+        h1{
+            text-align: center;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px darkslategrey solid;
+            color: darkslategrey;
+        }
+        h1 img{
+            width: 40px;
+            height: 40px;
+        }
+        h2{
+            font-size: 1em;
+            font-weight: 400;
+            text-align: center;
+            padding: 80px 0;
+            color: darkslategrey;
+        }
+      
+        .container{
+            display: grid;
+            grid-template: repeat(3,1fr)/repeat(4,1fr);
+            grid-gap: 20px;
+            padding: 0 20px;
+            padding-bottom: 40px;
+            border-bottom: 1px darkslategrey solid;
+        }
+        main figure:first-child{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        figure .cont_img{
+            flex-grow: 1;
+            overflow: hidden;
+        }
+        figure .cont_img img{
+            width: 101%;
+            height: 101%;
+            object-fit: cover;
+            object-position: center;
+        }
+        figure{
+            font-size: 0.85em;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            color: darkslategrey;
+        }
+        figure p{
+            padding-top: 0.1em;
+            font-size: 0.75;
+            font-weight: normal;
+            color: grey;
+        }
+       
+        footer{
+            /margin: 50px 0 0 0;/
+            padding: 0 30;
+        }
+        h3{
+            font-size: 0.90em;
+            font-weight: 400;
+            text-align: center;
+            padding: 80px 30px;
+            color: darkslategrey;
+        }
+        menu{
+            padding: 15px 80px;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px darkslategrey solid;
+            font-size: 0.80em;
+            color: darkslategrey;
+            
+        }
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+            body{
+                font-size: 15px;
+            }
+            .container{
+                grid-template: repeat(3,1fr)/repeat(2,1fr);
+        }
+        }
+        @media only screen and (min-device-width : 481px) and (max-device-width : 1024px){
+            body{
+                font-size: 16px;
+            }
+            .container{
+                grid-template: repeat(3,1fr)/repeat(3,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="img/logo.png"></h1>
+        <h2>Minimal &amp; Mindful Curation</h2>
+    </header>
+    <main class="container">
+        <figure>
+            <div class="cont_img">
+            <img src="img/Minimalissimo%20N%C3%9F2%20(Digital).jpeg">
+            </div>
+            <header>
+                <fgcaption>Minimal Nº3</fgcaption>
+                <p>GBP 12.00</p>
+            </header>
+        </figure>
+        <figure>
+            <div class="cont_img">
+                <img src="img/Blloc%20Zero18.jpeg">
+            </div>
+            <header>
+                <fgcaption>Minimal Nº2</fgcaption>
+                <p>GBP 3.00</p>
+            </header>
+        </figure>
+        <figure>
+            <div class="cont_img">
+                <img src="img/Minimalist%20Writer.jpeg">
+            </div>
+            <header>
+                <fgcaption>Blloc Zero 18</fgcaption>
+                <p>GBP 325.00</p>
+            </header>
+        </figure>
+        <figure>
+            <div class="cont_img">
+                <img src="img/Minimalissimo%20Watch.jpeg">
+            </div>
+            <header>
+                <fgcaption>Minimal writer</fgcaption>
+                <p>GBP 10.00</p>
+            </header>
+        </figure>
+        <figure>
+            <div class="cont_img">
+                <img src="img/minim_6.jpeg">
+            </div>
+            <header>
+                <fgcaption>Minimal watch</fgcaption>
+                <p>GBP 140.00</p>
+            </header>
+        </figure>
+        <figure>
+            <div class="cont_img">
+                <img src="img/minim_6.jpeg">
+            </div>
+            <header>
+            <fgcaption>Minimal writer II</fgcaption>
+            <p>GBP 10.00</p>
+            </header>
+        </figure>
+    </main>
+    <footer>
+        <h3><a href="https://minimalissimo.com">Minimalissimo</a> is a magazine and creative studio dedicated to minimalism in art and design.</h3>
+        <menu>
+            <a href="https://minimalissimo.shop/terms">Terms</a>
+            <a href="https://minimalissimo.shop/contacts">Contacts</a>
+            <a href="https://minimalissimo.shop/privacy">Privacy</a>
+        </menu>
+    </footer>
+</body>
+</html>
